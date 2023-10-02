@@ -1,0 +1,359 @@
+body {
+    margin: 0;
+}
+
+/* -------- HEADER -------- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(252, 245, 235, 0.8);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #895e3f;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(4px);
+    transition-duration: 0.5s;
+}
+
+.navcount {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 80px;
+}
+
+.navbar-left {
+    display: flex;
+}
+  
+.logo {
+    color: #23230a;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
+
+.navbar-right{
+    display: flex;
+    gap: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-link {
+    color: #23230a;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 550;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    border-bottom: 2px solid transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-active {
+    color: #23230a;
+    border-bottom: 2px solid #895e3f;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 550;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-link:hover {
+    color: #23230a;
+    border-bottom: 2px solid #895e3f;
+}
+
+.nav-active:hover {
+    color: #23230a;
+    border-bottom: 2px solid #895e3f;
+}
+
+/* -------- CSS SECTION CONTOH -------- */
+.container-contoh-s-1 {
+    background-image: url("https://www.sooribali.com/img/site_images/soori-bali-journeys-explore-local-culture-traditional-village.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-contoh-s-1-1 {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.isi-contoh-s-1 {
+    background-color: transparent;
+    margin: 300px 80px;
+}
+
+/* -------- SECTION 1 -------- */
+.container-tentang-s-1 {
+    background-color: #fcf5eb;
+}
+
+.container-tentang-s-1-1 {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.isi-tentang-s-1 {
+    background-color: transparent;
+}
+
+/* -------- SECTION 2 -------- */
+.container-tentang-s-2 {
+    background-color: #fcf5eb;
+}
+
+.container-tentang-s-2-1{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.isi-tentang-s-2 {
+    background-color: transparent;
+}
+
+/* -------- SECTION 3 -------- */
+.container-tentang-s-3 {
+    background-color: #fcf5eb;
+}
+
+.container-tentang-s-3-1 {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.isi-tentang-s-3 {
+    background-color: transparent;
+}
+
+/* -------- FOOTER -------- */
+.footer {
+    background-color: white;
+}
+
+.f-sec-1 {
+    background-color: #e8b897;
+}
+
+.f-info {
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.f-info-con, .f-info-con2, .f-info-con3, .f-info-con4 {
+    background-color: transparent;
+}
+
+.f-info-con {
+    align-self: center;
+    padding-left: 80px;
+}
+
+.f-info-con2 {
+    align-self: center;
+}
+
+.f-info-con3 {
+    width: 250px;
+    align-self: center;
+}
+
+.f-info-con4 {
+    align-self: center;
+    padding-right: 80px;
+}
+
+.info-logo {
+    color: #23230a;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.info-text {
+    color: #23230a;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.fa-facebook-f,.fa-instagram,.fa-x-twitter,.fa-youtube {
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    color: #23230a;
+}
+
+.sos-ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.sos-li {
+    display: inline-block;
+}
+
+.info-sos {
+    margin-right: 30px;
+}
+
+.fa-facebook-f:hover {
+    color: rgb(0, 123, 255);
+}
+
+.fa-instagram:hover {
+    color: #e843a0;
+}
+
+.fa-x-twitter:hover {
+    color: rgb(0, 0, 0);
+}
+
+.fa-youtube:hover {
+    color: rgb(242, 0, 0);
+}
+
+.info-menu-list {
+    list-style: none;
+    columns: 2;
+    padding: 0;
+}
+
+.info-li {
+    margin-right: 30px;
+}
+
+.info-menu {
+    color: #23230a;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 3;
+}
+
+.info-3-text {
+    color: #23230a;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.info-3-text2 {
+    color: #23230a;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.info-4-text {
+    color: #23230a;
+    font-family: 'Red Hat Display';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin-left: 10px;
+}
+
+.ps-store {
+    max-width: 150px;
+    height: auto;
+}
+
+.as-store {
+    max-width: 150px;
+    height: auto;
+}
+
+.f-sec-2 {
+    background-color: #895e3f;
+}
+
+.f-cpr {
+    background-color: transparent;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.f-cpr-con {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 80px;
+}
+
+.cpr {
+    font-family: 'Red Hat Display';
+    color: #e6d5ca;
+    font-size: 14px;
+}
+
+.tnc-plcy {
+    display: flex;
+    gap: 50px;
+}
+
+.tnc, .plcy {
+    text-decoration: none;
+    font-family: 'Red Hat Display';
+    color: #e6d5ca;
+    font-size: 14px;
+}
+
+.tnc:hover, .plcy:hover {
+    color: black;
+}

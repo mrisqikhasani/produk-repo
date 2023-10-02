@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk- Company</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Red Hat Display"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ae87e11e18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/produk.css" />
+  </head>
+  <body>
+    <!-- HEADER/NAVBAR -->
+    <header class="header">
+      <div class="navcount">
+        <nav class="navbar">
+          <div class="navbar-left">
+            <a class="logo">Company</a>
+            <a
+              href="javascript:void(0);"
+              class="nav-icon"
+              onclick="myFunction()"
+            >
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <div class="navbar-right" id="navbarRight">
+            <a href="index.html" class="nav-active nav-first">Beranda</a>
+            <a href="produk.html" class="nav-link">Produk</a>
+            <a href="tentang.html" class="nav-link">Tentang Kami</a>
+            <a href="kontak.html" class="nav-link">Kontak</a>
+          </div>
+        </nav>
+      </div>
+             
+    </header>
+    <section class="container-contoh-s-1">
+      <div class="container-contoh-s-1-1">
+        <div class="isi-contoh-s-1"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 1 (GAMBAR COVER) -->
+    <section class="container-produk-s-1">
+      <img class="gambar-produk-s-1-1" src="img/gambar handmade.webp" alt="" />
+      <!-- <img class="gambar-produk-s-1-2" src="img/handmade.jpg" alt="" /> -->
+      <div class="container-produk-s-1-1">
+        <div class="isi-produk-s-1"></div>
+        <a href="#section2" class="fa-solid fa-chevron-down"></a>
+      </div>
+    </section>
+
+    <!-- SECTION 2 (INTRO COMPANY) -->
+    <section class="container-produk-s-2" id="section2">
+      <div class="container-produk-s-2-1">
+        <div class="isi-produk-s-2">
+          <div class="img-hp-p-s-2">
+            <img src="./img/handphone.png" alt="" />
+          </div>
+          <div class="caption-p-s-2">
+            <p class="desc-higlight-p-s-2">E-Commerce</p>
+            <p class="desc-p-s-2">
+              Creatopia menjamin tersedianya layanan bagi kegiatan seniman kami
+            </p>
+            <div class="another-caption-p-s-2">
+              <p>Layanan E-commerce melalui aplikasi seluler dan desktop.</p>
+              <p>
+                Platform teknologi periklanan untuk membantu seniman
+                mempromosikan bisnis.
+              </p>
+              <p>
+                Kerjasama dengan partner logistik untuk menjamin barang segera
+                sampai.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- SECTION 3 (KATEGORI PRODUK) -->
+    <section class="container-produk-s-3" id="container-produk-s-3">
+      <div class="container-produk-s-3-1">
+        <div class="isi-produk-s-3">
+          <h1 class="judul-p-s-3">Kategori Produk Kami</h1>
+          <div class="css-6cmt0u">
+            <a
+              onclick="tampilkanKategori('list-produk-fashion')"
+              style="text-decoration: none"
+            >
+              <div class="css-yubsf4 fashion">
+                <img
+                  src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/arael/kratos/69d7df29.png"
+                  alt="fashion.png"
+                  class="css-11u4aza loaded"
+                />
+                <div class="css-1hvqo42">Fashion</div>
+              </div>
+            </a>
+
+            <a
+              href="https://www.tokopedia.com/p/ibu-bayi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="css-yubsf4">
+                <img
+                  src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/arael/kratos/d0624903.png"
+                  alt="mom.png"
+                  class="css-11u4aza loaded"
+                />
+                <div class="css-1hvqo42">Ibu &amp; Anak</div>
+              </div>
+            </a>
+
+            <a
+              onclick="tampilkanKategori('list-produk-makeup')"
+              style="text-decoration: none"
+            >
+              <div class="css-yubsf4">
+                <img
+                  src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/arael/kratos/35c776b1.png"
+                  alt="beauty.png"
+                  class="css-11u4aza loaded"
+                />
+                <div class="css-1hvqo42">Perawatan Kecantikan</div>
+              </div>
+            </a>
+
+            <a
+              onclick="tampilkanKategori('list-produk-elektronik')"
+              style="text-decoration: none"
+            >
+              <div class="css-yubsf4 elektronik">
+                <img
+                  src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/arael/kratos/d645118e.png"
+                  alt="electronic.png"
+                  class="css-11u4aza loaded"
+                />
+                <div class="css-1hvqo42">Elektronik</div>
+              </div>
+            </a>
+
+            <a
+              href="https://www.tokopedia.com/p/makanan-minuman"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="css-yubsf4">
+                <img
+                  src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/arael/kratos/def08dd9.png"
+                  alt="food.png"
+                  class="css-11u4aza loaded"
+                />
+                <div class="css-1hvqo42">Makanan &amp; Kesehatan</div>
+              </div>
+            </a>
+
+            <a
+              href="https://www.tokopedia.com/p/otomotif"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="css-yubsf4">
+                <img
+                  src="https://assets.tokopedia.net/assets-tokopedia-lite/v2/arael/kratos/060c025b.png"
+                  alt="automotive.png"
+                  class="css-11u4aza loaded"
+                />
+                <div class="css-1hvqo42">Otomotif</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 (DAMPAK COMPANY) -->
+    <section class="container-produk-s-4">
+      <div class="container-produk-s-4-1">
+        <div class="isi-produk-s-4" id="isi-produk-s-4">
+          <h1 class="judul-p-s-4">Kategori Produk Kami</h1>
+
+          <!-- list Categories -->
+          <ul class="list-categories">
+            <li class="category">Home & Living</li>
+            <li class="category">Toys & Entertaiment</li>
+            <li class="category">Craft Supplies & Tools</li>
+            <li class="category">Clothing & Shoes</li>
+            <li class="category">Jewelry & Accessories</li>
+            <li class="category">Vintage</li>
+          </ul>
+
+          <!-- button for return to category section -->
+          <button onclick="keSectionCategory()" id="buttonToCategory">
+            Back to Category
+          </button>
+          <!-- list Produk Fashion -->
+          <div class="list-produk" id="list-produk-fashion">
+            <h3 class="judul-p-s-4">Fashion</h3>
+            <ul class="fashion">
+              <li class="produk-card">
+                <img src="./img/fashion/fashion 1.jpg" alt="fashion1" />
+                <p class="nama-produk">
+                  Jaket pria/long coat pria musim dingin High quality
+                </p>
+                <p class="harga">Rp 1.000.000</p>
+              </li>
+              <li class="produk-card">
+                <img src="./img/fashion/fashion 2.jpg" alt="fashion2" />
+                <p class="nama-produk">
+                  Long scarf women winter import syal musim dingin wanita rajut
+                  hangat
+                </p>
+                <p class="harga">Rp 1.000.000</p>
+              </li>
+              <li class="produk-card">
+                <img src="./img/fashion/fashion 3.jpg" alt="fashion3" />
+                <p class="nama-produk">JOIAS Ellena cardan</p>
+                <p class="harga">Rp 1.000.000</p>
+              </li>
+              <li class="produk-card">
+                <img src="./img/fashion/fashion 4.jpg" alt="fashion4" />
+                <p class="nama-produk">
+                  HIJAB PASMINA POLOS KAOS RAYON PREMIUM - Putih BW
+                </p>
+                <p class="harga">Rp 1.000.000</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- list Produk Elektronik  -->
+          <div class="list-produk" id="list-produk-makeup">
+            <h3 class="judul-p-s-4">Kecantikan</h3>
+            <ul class="makeup">
+              <li class="produk-card">
+                <img src="./img/makeup/makeup1.jpeg" alt="makeup1" />
+                <p>Armani lipstick | Danielle</p>
+                <p class="harga">Rp 1.000.000</p>
+              </li>
+              <li class="produk-card">
+                <img src="./img/makeup/makeup2.jpg" alt="makeup2" />
+                <p>Armani Makeup Lab | Hanni</p>
+                <p class="harga">Rp 1.000.000</p>
+              </li>
+              <li class="produk-card">
+                <img src="./img/makeup/makeup3.jpg" alt="makeup3" />
+                <p>Armani Makeup Lab | Hanni</p>
+                <p class="harga">Rp 1.000.000</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- list Produk Elektronik  -->
+          <div class="list-produk" id="list-produk-elektronik">
+            <h3 class="judul-p-s-4">Elektronik</h3>
+            <ul class="elektronik">
+              <li class="produk-card">
+                <img src="./img/elektronik/elektronik 1.jpg" alt="makeup1" />
+                <p>
+                  Setrika Miyako Setrika Listrik - EI-1000M T3H2 Elektronik
+                  Rumah Tangga
+                </p>
+                <p class="harga">Rp 1.000.000</p>
+              </li>
+              <li class="produk-card">
+                <img
+                  src="./img/elektronik/elektronik 2.jpg"
+                  alt="elektronik2"
+                />
+                <p>COSMOS Magic Com Rice Cooker CRJ 3307</p>
+                <p class="harga">Rp 1.000.000</p>
+              </li>
+              <li class="produk-card">
+                <img
+                  src="./img/elektronik/elektronik 3.png"
+                  alt="elektronik3"
+                />
+                <p>MIYAKO Kipas Angin Berdiri 16Inch KAS-1606X</p>
+                <p class="harga">Rp 1.000.000</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- LINK JAVASCRIPT PRODUK-->
+      <script src="js/produk.js"></script>
+    </section>
+
+    <!-- SECTION SETERUSNYA (NAMA CONTENT) -->
+    <!-- FOOTER -->
+    <footer class="footer">
+      <section class="f-sec-0">
+        <div class="f-newsletter">
+          <p class="title-newsletter">
+            Jangan lewatkan informasi komunitas, acara, berita, promosi, dan
+            masih banyak lagi.
+          </p>
+          <div class="f-newsletter-icon">
+            <i class="icon-newsletter fa-solid fa-users-between-lines"></i>
+            <i class="icon-newsletter fa-regular fa-calendar"></i>
+            <i class="icon-newsletter fa-regular fa-newspaper"></i>
+            <i class="icon-newsletter fa-solid fa-percent"></i>
+          </div>
+          <div class="form-newsletter">
+            <div class="newsletter-box">
+              <p class="nesletter-isi-box1">SUBSCRIBE TO OUR</p>
+              <p class="nesletter-isi-box2">NEWSLETTER</p>
+            </div>
+            <div class="input-newsletter">
+              <form class="newsletter" action="">
+                <input
+                  class="text-newsletter"
+                  type="email"
+                  placeholder=" Masukkan e-mail kamu"
+                />
+                <input
+                  class="button-newsletter"
+                  type="button"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="f-sec-1">
+        <div class="f-info">
+          <div class="f-info-con">
+            <p class="info-logo">Company</p>
+            <p class="info-text">Dapatkan berita terbaru</p>
+            <ul class="sos-ul">
+              <li class="sos-li">
+                <a class="info-sos" href="https://facebook.com" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="sos-li">
+                <a
+                  class="info-sos"
+                  href="https://instagram.com"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="sos-li">
+                <a class="info-sos" href="https://x.com" target="_blank">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+              <li class="sos-li">
+                <a class="info-sos" href="https://youtube.com" target="_blank">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="f-info-con2">
+            <ul class="info-menu-list">
+              <li class="info-li">
+                <a class="info-menu" href="">Beranda</a>
+              </li>
+              <li class="info-li2">
+                <a class="info-menu" href="">Produk</a>
+              </li>
+              <li class="info-li3">
+                <a class="info-menu" href="">Tentang</a>
+              </li>
+              <li class="info-li4">
+                <a class="info-menu" href="">Kontak</a>
+              </li>
+            </ul>
+          </div>
+          <div class="f-info-con3">
+            <p class="info-3-text">Kantor Pusat</p>
+            <p class="info-3-text2">
+              Jalan Jend. A Yani No. 34, Kel. Panjunan, Kec. Kota Kudus, Kab.
+              Kudus, Jawa Tengah, 59317.
+            </p>
+          </div>
+          <div class="f-info-con4">
+            <p class="info-4-text">Unduh App Company</p>
+            <a
+              class="info-str"
+              target="_blank"
+              href="https://www.apple.com/id/app-store/"
+            >
+              <img class="as-store" src="img/as.png" alt="" />
+            </a>
+            <a
+              class="info-str"
+              target="_blank"
+              href="https://play.google.com/store/games?device=windows"
+            >
+              <img class="ps-store" src="img/ps.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="f-sec-2">
+        <div class="f-cpr">
+          <div class="f-cpr-con">
+            <div class="cpr">2023 Company, PT Company Tbk.</div>
+            <div class="tnc-plcy">
+              <a class="tnc" href="">Peraturan & Kebijakan</a>
+              <a class="plcy" href="">Pemberitahuan Privasi</a>
+            </div>
+          </div>
+        </div>
+      </section>
+             
+    </footer>
+
+    <!-- LINK JAVASCRIPT -->
+    <script src="js/produk.js"></script>
+  </body>
+</html>
