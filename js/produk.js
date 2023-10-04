@@ -10,28 +10,21 @@ function tampilkanKategori(kategori) {
   if (selectedTab) {
     selectedTab.classList.add("active"); // Tambahkan kelas 'active'
   }
-
-  // view
-  var scrollView = document.getElementById("isi-produk-s-4");
-  scrollView.scrollIntoView({ behavior: "smooth" });
 }
 
-// scroll
-window.onscroll = function() {scrollTampilkanButton()};
+// for button active list category
+function buttonActiveCategory() {
+  const categories = document.querySelectorAll(".category");
 
-function scrollTampilkanButton() {
-  var buttonBackToCategory = document.getElementById("buttonToCategory");
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 1000) {
-      buttonBackToCategory.style.display = "block";
-    } else {
-      buttonBackToCategory.style.display = "none";
-    }
+  categories.forEach((category) => {
+    category.addEventListener("click", () => {
+      // Hilangkan kelas "active" dari semua elemen
+      categories.forEach((c) => c.classList.remove("active"));
+
+      // Tambahkan kelas "active" hanya ke elemen yang diklik
+      category.classList.add("active");
+    });
   });
 }
 
-// function untuk kembali lagi ke atas
-function keSectionCategory() {
-  var sectionCategory = document.getElementById("container-produk-s-3");
-  sectionCategory.scrollIntoView({ behavior: "smooth" });
-}
+buttonActiveCategory();

@@ -7,19 +7,14 @@ body {
   font-family: "Red Hat Display";
 }
 
-/** -------- HEADER -------- */
+/* -------- HEADER -------- */
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(252, 245, 235, 0.4);
-  border-style: solid;
-  border-width: 1px;
-  border-color: #895e3f;
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(8px);
+  background-color: transparent;
+  border-radius: 0 0 25px 25px;
   transition-duration: 0.5s;
   z-index: 2;
 }
@@ -43,42 +38,44 @@ body {
 }
 
 .logo {
-  color: #23230a;
-  font-family: "Red Hat Display";
+  color: white;
+  text-shadow: 1px 1px 3.5px black;
+  font-family: 'Red Hat Display';
   font-weight: 600;
   font-size: 26px;
   letter-spacing: 1.5px;
-  text-decoration: none;
 }
 
-.navbar-right {
+.navbar-right{
   display: flex;
   gap: 60px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .nav-link {
-  color: #23230a;
+  color: white;
+  text-shadow: 1px 1px 3.5px black;
   text-decoration: none;
   text-align: center;
   font-size: 18px;
   font-weight: 550;
-  font-family: "Red Hat Display";
+  font-family: 'Red Hat Display';
   font-weight: 600;
   letter-spacing: 1.2px;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .nav-active {
-  color: #23230a;
-  border-bottom: 2px solid #895e3f;
+  color: white;
+  border-bottom: 3px solid white;
+  text-shadow: 1px 1px 3.5px black;
   text-decoration: none;
   text-align: center;
   font-size: 18px;
   font-weight: 550;
-  font-family: "Red Hat Display";
+  font-family: 'Red Hat Display';
   font-weight: 600;
   letter-spacing: 1.2px;
   padding-top: 10px;
@@ -86,99 +83,95 @@ body {
 }
 
 .nav-link:hover {
-  color: #23230a;
-  border-bottom: 2px solid #895e3f;
+  color: white;
+  border-bottom: 3px solid white;
 }
 
 .nav-active:hover {
-  color: #23230a;
-  border-bottom: 2px solid #895e3f;
+  color: white;
+  border-bottom: 3px solid white;
 }
 
 .nav-icon {
   display: none;
-  color: #121212;
+  color: white;
 }
 
 @media screen and (max-width: 800px) {
   .navbar {
-    display: block;
-    padding-left: 0;
-    padding-right: 0;
+      display: block;
+      padding-left: 0;
+      padding-right: 0;
   }
   .logo {
-    font-size: 21px;
-    padding-left: 30px;
+      font-size: 21px;
+      padding-left: 30px;
   }
   .navbar-left {
-    display: flex;
-    justify-content: space-between;
+      display: flex;
+      justify-content: space-between;
   }
   .nav-link,
   .nav-active {
-    font-size: 17px;
-    padding-left: 30px;
-    padding-right: 30px;
+      font-size: 17px;
+      padding-left: 30px;
+      padding-right: 30px;
   }
   .nav-first {
-    margin-top: 20px;
+      margin-top: 20px;
   }
   .nav-active {
-    background: linear-gradient(90deg, #e7c5ae 0%, #fcf5eb00 100%);
-    border-top: 1px solid #895e3f;
-    border-width: 1px;
+      background: linear-gradient(90deg, #e7c5ae 0%, #fcf5eb00 100%);
+      border-top: 1px solid #895e3f;
+      border-width: 1px;
   }
   .nav-icon {
-    align-self: center;
-    padding-right: 30px;
+      align-self: center;
+      padding-right: 30px;
   }
   .navbar-right {
-    display: block;
+      display: block;
   }
 }
 @media screen and (max-width: 800px) {
-  .navbar-right a {
-    display: none;
-  }
+  .navbar-right a{display: none;}
   .navbar-left a.nav-icon {
     float: right;
     display: block;
   }
 }
 @media screen and (max-width: 800px) {
-  .navbar-right.responsive {
-    position: relative;
-  }
-  .navbar-left.responsive .nav-icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar-right.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+.navbar-right.responsive {position: relative;}
+.navbar-left.responsive .nav-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
-@media screen and (max-width: 400px) {
+.navbar-right.responsive a{
+  float: none;
+  display: block;
+  text-align: left;
+}
+}
+@media screen and (max-width: 500px) {
   .logo {
-    font-size: 18px;
-    padding-left: 25px;
+      font-size: 18px;
+      padding-left: 25px;
   }
   .nav-link,
   .nav-active {
-    font-size: 16px;
-    padding-left: 25px;
-    padding-right: 25px;
+      font-size: 16px;
+      padding-left: 25px;
+      padding-right: 25px;
   }
   .nav-active {
-    background: linear-gradient(90deg, #e7c5ae 0%, #fcf5eb00 100%);
-    border-top: 1px solid #895e3f;
-    border-width: 1px;
+      background: linear-gradient(90deg, #e7c5ae 0%, #fcf5eb00 100%);
+      border-top: 1px solid #895e3f;
+      border-width: 1px;
   }
   .nav-icon {
-    align-self: center;
-    padding-right: 25px;
+      align-self: center;
+      padding-right: 25px;
   }
 }
 
@@ -345,7 +338,7 @@ body {
 }
 
 .desc-higlight-p-s-2 {
-  color: #cbcbcb;
+  color: #686767;
   font-size: 20px;
   font-weight: 400;
 }
@@ -355,15 +348,14 @@ body {
   color: #957647;
   font-size: 40px;
   font-weight: 800;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-.another-caption-p-s-2 p{
+.another-caption-p-s-2 p {
   margin: 18px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
-
 
 .button-p-s-2 {
   width: 250px;
@@ -392,10 +384,7 @@ body {
     margin-bottom: 50px;
   }
   .desc-p-s-2 {
-    font-family: "Red Hat Display";
-    font-size: 20px;
-    color: #23230a;
-    margin-bottom: 50px;
+   font-size: 32px;
   }
   .button-p-s-2 {
     width: 200px;
@@ -415,6 +404,7 @@ body {
     background-color: transparent;
     width: 100%;
     padding: 30px;
+    display: block;
   }
   .judul-p-s-2 {
     font-family: "Red Hat Display";
@@ -423,12 +413,12 @@ body {
     color: #23230a;
     margin-bottom: 50px;
   }
-  .desc-p-s-2 {
+  /* .desc-p-s-2 {
     font-family: "Red Hat Display";
     font-size: 15px;
     color: #23230a;
     margin-bottom: 50px;
-  }
+  } */
   .button-p-s-2 {
     width: 130px;
     height: 35px;
@@ -445,7 +435,7 @@ body {
 
 /* -------- SECTION 3 -------- */
 .container-produk-s-3 {
-  background: #e7c5ae;
+  background-color: white;
 }
 
 .container-produk-s-3-1 {
@@ -461,78 +451,10 @@ body {
 .isi-produk-s-3 {
   background-color: transparent;
   width: 100%;
-  padding: 80px;
+  padding: 80px 0;
 }
+
 .judul-p-s-3 {
-  font-family: "Red Hat Display";
-  font-size: 38px;
-  font-weight: 600;
-  color: #23230a;
-  margin-bottom: 50px;
-}
-.desc-p-s-3 {
-  font-family: "Red Hat Display";
-  font-size: 28px;
-  font-weight: 600;
-  color: #23230a;
-  margin-bottom: 50px;
-}
-
-@media screen and (max-width: 800px) {
-  .video-p-s-3 {
-    min-width: 100%;
-    height: auto;
-  }
-  .desc-p-s-3 {
-    font-family: "Red Hat Display";
-    font-size: 22px;
-    font-weight: 600;
-    color: #23230a;
-    margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .isi-produk-s-3 {
-    background-color: transparent;
-    width: 100%;
-    padding: 30px;
-  }
-  .video-p-s-3 {
-    max-width: 100%;
-    height: auto;
-  }
-  p.desc-p-s-3 {
-    font-family: "Red Hat Display";
-    font-size: 12px;
-    font-weight: 600;
-    color: #23230a;
-    margin-bottom: 20px;
-  }
-}
-
-/* -------- SECTION 4 -------- */
-.container-produk-s-4 {
-  background-color: white;
-}
-
-.container-produk-s-4-1 {
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  max-width: 1300px;
-  margin: auto;
-}
-
-.isi-produk-s-4 {
-  background-color: transparent;
-  width: 100%;
-  padding: 80px;
-}
-
-.judul-p-s-4 {
   font-family: "Red Hat Display";
   font-size: 34px;
   font-weight: 600;
@@ -557,79 +479,115 @@ body {
   border: 2px solid #725b38;
   border-radius: 15px;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
   color: #151515;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
+.list-categories .category.active {
+  background-color: #50362a;
+  color: #f6f4f0;
+}
+
 .list-categories .category:hover {
   background-color: #50362a;
-}
-
-/* button back to section category */
-#buttonToCategory {
-  display: none;
-  position: fixed;
-  bottom: 25px;
-  right: 30px;
-  z-index: 99;
-  font-size: 15px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-#buttonToCategory:hover {
-  background-color: #555;
+  color: #f6f4f0;
 }
 
 /* list produk */
+.line {
+  background-color: #000000;
+  width: 90%;
+  margin: 0 auto;
+  /* width: 50%; */
+  height: 1px;
+  align-items: center;
+  justify-content: center;
+}
+
 .list-produk ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .list-produk .produk-card {
-  text-align: center;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: start;
+  margin: 10px 0;
+}
+.list-produk img {
+  width: 400px;
+  height: 390px;
   transition: transform 0.3s;
 }
-.list-produk .produk-card:hover {
+.list-produk img:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.list-produk img {
-  width: 250px;
 }
 
 .list-produk .nama-produk {
-  font-weight: 400;
+  color: #000000;
   font-size: 16px;
+  font-weight: 400;
 }
 
 .list-produk .harga {
-  font-weight: bold;
+  font-weight: 700;
 }
 .list-produk p {
   font-family: "Red Hat Display";
 }
 
-.list-produk li {
-  width: 250px;
-  margin: 10px;
+.btn-kunjugi-creatopia{
+  overflow: visible;
+  font-weight: 600;
+  line-height: 27px;
+  text-decoration: none;
+  outline: none;
+  background-color: #50362A;
+  color: #FFFEFB;
+  padding: 12px 25px;
+  border-radius: 40px;
 }
 
 @media screen and (max-width: 800px) {
+  .list-produk ul {    
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .list-produk img {
+    width: 320px;
+    height: 310px;
+  }
+  
+  /*.list-produk img:hover {
+    transform: translateY(-5px);
+  }
+  
+  .list-produk .nama-produk {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .list-produk .harga {
+    font-weight: 700;
+  }
+  .list-produk p {
+    font-family: "Red Hat Display";
+  } */
+}
+
+@media screen and (max-width: 500px){
+  .list-produk ul {    
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .list-produk img {
+    width: 280px;
+    height: 270px;
+  }
 }
 
 /* -------- KATEGORI -------- */
@@ -700,7 +658,8 @@ body {
 }
 
 .list-produk.active {
-  max-height: 1000px; /* Ubah nilainya sesuai dengan tinggi konten tertinggi Anda */
+  max-height: 1000em;
+  overflow: visible;
 }
 
 /* -------- FOOTER -------- */
@@ -709,7 +668,7 @@ body {
 }
 
 .f-sec-0 {
-  background-color: #e8b897;
+  background-color: #50362A;
 }
 
 .f-newsletter {
@@ -732,17 +691,17 @@ body {
 
 .icon-newsletter {
   font-size: 50px;
-  color: #895e3f;
-  text-shadow: 3px 3px 1px #f1ece7;
+  color: #e6d5ca;
+  /* text-shadow: 3px 3px 1px #f1ece7; */
 }
 
 .title-newsletter {
-  font-family: "Red Hat Display";
+  font-family: 'Poppins';
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-  color: #23230a;
-  padding-top: 50px;
+  color: #e6d5ca;
+  padding-top: 300px;
   letter-spacing: 0.5px;
   margin: 0;
 }
@@ -750,32 +709,32 @@ body {
 .form-newsletter {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #895e3f;
+  border-top: 1px solid #e6d5ca;
 }
 
 .newsletter-box {
   display: block;
-  background-color: #e7c5ae;
   width: 30%;
   text-align: center;
   padding-right: 20px;
   padding-left: 80px;
+  border-right: 1px solid #e6d5ca;
 }
 
 .nesletter-isi-box1 {
-  font-family: "Red Hat Display";
+  font-family: 'Poppins';
   font-size: 16px;
   font-weight: 500;
-  color: #23230a;
+  color: #e6d5ca;
   margin-top: 15px;
   margin-bottom: 5px;
 }
 
 .nesletter-isi-box2 {
-  font-family: "Red Hat Display";
+  font-family: 'Poppins';
   font-size: 24px;
   font-weight: 600;
-  color: #23230a;
+  color: #e6d5ca;
   margin-top: 5px;
   margin-bottom: 15px;
 }
@@ -791,40 +750,40 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 3px;
-  border: 1px solid #895e3f;
+  border: 1px solid #e6d5ca;
   border-radius: 20px;
-  background-color: #e7c5ae;
+  background-color: #e6d5ca;
 }
 .text-newsletter {
   width: 100%;
   height: 30px;
   border-radius: 20px 0 0 20px;
   border-width: 0;
-  background-color: #e7c5ae;
+  background-color: #e6d5ca;
   margin-left: 10px;
 }
 .button-newsletter {
   width: 120px;
-  background-color: #895e3f;
+  background-color: #50362A;
   border: none;
-  font-family: "Red Hat Display";
+  font-family: 'Poppins';
   color: #f1ece7;
   letter-spacing: 1.2px;
   border-radius: 20px;
   cursor: pointer;
 }
 .button-newsletter:hover {
-  background-color: #966e52;
+  background-color: #614436;
   border: 1px solid #895e3f;
 }
 
-.text-newsletter:focus {
+.text-newsletter:focus{
   outline: none;
 }
 
 .f-sec-1 {
-  background-color: #e8b897;
-  border-top: 1px solid #895e3f;
+  background-color: #50362A;
+  border-top: 1px solid #e6d5ca;
 }
 
 .f-info {
@@ -837,10 +796,7 @@ body {
   padding-bottom: 40px;
 }
 
-.f-info-con,
-.f-info-con2,
-.f-info-con3,
-.f-info-con4 {
+.f-info-con, .f-info-con2, .f-info-con3, .f-info-con4 {
   background-color: transparent;
 }
 
@@ -857,8 +813,8 @@ body {
 }
 
 .info-logo {
-  color: #23230a;
-  font-family: "Red Hat Display";
+  color: #e6d5ca;
+  font-family: 'Poppins';
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 1.5px;
@@ -866,22 +822,22 @@ body {
 }
 
 .info-text {
-  color: #23230a;
-  font-family: "Red Hat Display";
+  color: #e6d5ca;
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1.1px;
   margin-top: 10px;
 }
 
-.fa-facebook-f,
-.fa-instagram,
-.fa-x-twitter,
-.fa-youtube {
-  text-align: center;
-  align-items: center;
-  font-size: 24px;
-  color: #23230a;
+.fa-facebook-f,.fa-instagram,.fa-x-twitter,.fa-youtube {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  color: #50362A;
+  height: 35px;
+  width: 35px;
+  justify-content: center;
 }
 
 .sos-ul {
@@ -895,7 +851,21 @@ body {
 }
 
 .info-sos {
-  margin-right: 30px;
+  text-decoration: none;
+  margin: auto;
+  justify-content: center;display: flex;
+  background-color: #e6d5ca;
+  flex-direction: column;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.info-sos:hover {
+  background-color: #e6d5ca;
+  box-shadow: 0px 0px 4px #895e3f;
 }
 
 .fa-facebook-f:hover {
@@ -916,7 +886,7 @@ body {
 
 .info-menu-list {
   list-style: none;
-  columns: 2;
+  columns: 1;
   padding: 0;
   margin-top: 0;
 }
@@ -926,40 +896,39 @@ body {
 }
 
 .info-menu {
-  color: #23230a;
+  color: #e6d5ca;
   text-decoration: none;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
-  font-family: "Red Hat Display";
+  font-family: 'Poppins';
   font-weight: 600;
   letter-spacing: 1.2px;
   line-height: 3;
 }
 
 .info-3-text {
-  color: #23230a;
-  font-family: "Red Hat Display";
+  color: #e6d5ca;
+  font-family: 'Poppins';
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1.5px;
 }
 
 .info-3-text2 {
-  color: #23230a;
-  font-family: "Red Hat Display";
-  font-weight: 600;
+  color: #e6d5ca;
+  font-family: 'Poppins';
+  font-weight: 400;
   font-size: 12px;
   letter-spacing: 1.5px;
 }
 
 .info-4-text {
-  color: #23230a;
-  font-family: "Red Hat Display";
+  color: #e6d5ca;
+  font-family: 'Poppins';
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1.5px;
-  margin-left: 10px;
 }
 
 .info-str {
@@ -967,17 +936,18 @@ body {
 }
 
 .ps-store {
-  max-width: 120px;
+  max-width: 140px;
   height: auto;
 }
 
 .as-store {
-  max-width: 120px;
+  max-width: 140px;
   height: auto;
 }
 
 .f-sec-2 {
-  background-color: #895e3f;
+  background-color: #50362A;
+  border-top: 1px solid #e6d5ca;
 }
 
 .f-cpr {
@@ -994,7 +964,7 @@ body {
 }
 
 .cpr {
-  font-family: "Red Hat Display";
+  font-family: 'Poppins';
   color: #e6d5ca;
   font-size: 14px;
 }
@@ -1004,170 +974,168 @@ body {
   gap: 50px;
 }
 
-.tnc,
-.plcy {
+.tnc, .plcy {
   text-decoration: none;
-  font-family: "Red Hat Display";
+  font-family: 'Poppins';
   color: #e6d5ca;
   font-size: 14px;
 }
 
-.tnc:hover,
-.plcy:hover {
+.tnc:hover, .plcy:hover {
   color: #e7c5ae;
 }
 
 /* RESPONSIVE FOOTER */
 @media screen and (max-width: 800px) {
   .title-newsletter {
-    padding: 30px 30px;
-    font-size: 14px;
+      padding: 30px 30px;
+      font-size: 14px;
   }
   .f-newsletter-icon {
-    gap: 40px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    padding: 0;
+      gap: 40px;
+      margin-top: 0;
+      margin-bottom: 30px;
+      padding: 0;
   }
   .icon-newsletter {
-    font-size: 35px;
+      font-size: 35px;
   }
   .form-newsletter {
-    flex-direction: column;
+      flex-direction: column;
   }
   .newsletter-box {
-    width: 100%;
-    padding: 0;
+      width: 100%;
+      padding: 0;
   }
   .input-newsletter {
-    padding: 20px 0;
-    width: 60%;
+      padding: 20px 0;
+      width: 60%;
   }
   .nesletter-isi-box1 {
-    font-size: 14px;
+      font-size: 14px;
   }
   .nesletter-isi-box2 {
-    font-size: 20px;
+      font-size: 20px;
   }
   .text-newsletter {
-    height: auto;
-    font-size: 14px;
+      height: auto;
+      font-size: 14px;
   }
   .button-newsletter {
-    width: auto;
-    font-size: 11px;
+      width: auto;
+      font-size: 11px;
   }
   .f-info {
-    flex-direction: column;
-    padding: 40px;
+      flex-direction: column;
+      padding: 40px;
   }
   .f-info-con {
-    padding: 0;
+      padding: 0;
   }
   .info-logo {
-    font-size: 20px;
+      font-size: 20px;
   }
   .info-text {
-    font-size: 15px;
+      font-size: 15px;
   }
   .info-sos {
-    margin-right: 25px;
+      margin-right: 25px;
   }
   .f-info-con2 {
-    margin-top: 15px;
+      margin-top: 15px;
   }
   .info-menu-list {
-    columns: 1;
+      columns: 1;
   }
   .info-menu {
-    font-size: 15px;
+      font-size: 15px;
   }
   .info-3-text {
-    font-size: 15px;
+      font-size: 15px;
   }
   .info-3-text2 {
-    font-size: 13px;
-    font-weight: 500;
+      font-size: 13px;
+      font-weight: 500;
   }
   .info-4-text {
-    margin-left: 0;
-    font-size: 15px;
+      margin-left: 0;
+      font-size: 15px;
   }
   .as-store,
   .ps-store {
-    max-width: 100px;
+      max-width: 100px;
   }
   .f-cpr-con {
-    flex-direction: column;
-    padding: 20px 15px;
-    align-items: center;
-    gap: 10px;
+      flex-direction: column;
+      padding: 20px 15px;
+      align-items: center;
+      gap: 10px;
   }
   .cpr,
   .tnc,
   .plcy {
-    font-size: 13px;
+      font-size: 13px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .title-newsletter {
-    padding: 30px 30px;
-    font-size: 14px;
+      padding: 30px 30px;
+      font-size: 14px;
   }
   .f-newsletter-icon {
-    gap: 40px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    padding: 0;
+      gap: 40px;
+      margin-top: 0;
+      margin-bottom: 30px;
+      padding: 0;
   }
   .icon-newsletter {
-    font-size: 35px;
+      font-size: 35px;
   }
   .input-newsletter {
-    padding: 20px 0;
-    width: 90%;
+      padding: 20px 0;
+      width: 90%;
   }
   .nesletter-isi-box1 {
-    font-size: 12px;
+      font-size: 12px;
   }
   .nesletter-isi-box2 {
-    font-size: 18px;
+      font-size: 18px;
   }
   .text-newsletter {
-    height: auto;
+      height: auto;
   }
   .button-newsletter {
-    width: 90px;
-    font-size: 10px;
+      width: 90px;
+      font-size: 10px;
   }
   .f-info {
-    flex-direction: column;
-    padding: 15px;
+      flex-direction: column;
+      padding: 15px;
   }
   .info-logo {
-    font-size: 18px;
+      font-size: 18px;
   }
   .info-text {
-    font-size: 14px;
+      font-size: 14px;
   }
   .info-menu {
-    font-size: 14px;
+      font-size: 14px;
   }
   .info-3-text {
-    font-size: 14px;
+      font-size: 14px;
   }
   .info-3-text2 {
-    font-size: 12px;
-    font-weight: 500;
+      font-size: 12px;
+      font-weight: 500;
   }
   .info-4-text {
-    margin-left: 0;
-    font-size: 14px;
+      margin-left: 0;
+      font-size: 14px;
   }
   .cpr,
   .tnc,
   .plcy {
-    font-size: 12px;
+      font-size: 12px;
   }
 }
